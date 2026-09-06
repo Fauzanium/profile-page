@@ -16,15 +16,22 @@ const Galleries = [
         GitHub Link: https://github.com/Fauzanium/Kalkulator `,
         image_link: "https://cdn.discordapp.com/attachments/601356253666607115/1464976777267908792/image.png?ex=69776d71&is=69761bf1&hm=9ac0fb8e7a11205cc5c3553978d091366fef5d01cad22028f748e70eb80c0f90&"
     }),
-    new Gallery({}),
-    new Gallery({}),
+    new Gallery({
+        title: "HUD Mod for Minecraft",
+        image_link: "/hudmod.jpeg",
+        desc: "HUD Mod for Minecraft to track the kill count using kotlin"
+    }),
+    new Gallery({
+        title: "And Other",
+        desc: ""
+    }),
     // new Gallery({title: "Halo"}),
 ];
 export default function GalleryBox() {
     return Galleries.map(val => {
         return (
         <div className={styles.gallerybox}>
-            {/* <a>{val.title}</a> */}
+            {/* <a>{val.title}</a> */}  
             {/* <img src="/saya.jpg" className={styles.fotogallery}></img> */}
             {val.image_link ? <img src={val.image_link} className={styles.fotogallery}></img> : <div className={styles.fotogallery}/>  }
             <a className={styles.gallerytitle}>{val.title}</a>

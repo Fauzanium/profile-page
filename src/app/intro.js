@@ -54,9 +54,13 @@ export default function Intro() {
               <Image src="./instagram.svg" width={40} height={40} href="" />
             </a>
           </div>
+          <h3 className={styles.aboutme}>Skills</h3>
+          <div className={styles.social}>
+            <Image src="./javascript.svg" width={36} height={36} alt="" />
+          </div>
           <div className={styles.interest}>
             <h3>My Interest</h3>
-            <div>{interestsButton}</div>
+            <div>{interestsButton}</div>x
           </div>
         </div>
         <div className={styles.fotowrapper}>

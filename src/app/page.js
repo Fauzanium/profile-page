@@ -14,7 +14,6 @@ export default function Home() {
       <div className={styles.galleryboxcontainer}>
         <GalleryBox />
       </div>
-      <h1 className={styles.projects}>Experience</h1>
       <Experience />
     </>
   );

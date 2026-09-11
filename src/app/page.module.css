@@ -44,7 +44,7 @@
   gap: 15rem;
   background-color: var(--gray);
   width: 85em;
-  max-height: 600px;
+  /*max-height: 600px;*/
   margin-bottom: 5em;
   margin-top: 10em;
 }
@@ -163,6 +163,8 @@ a.secondary {
   width: 450px;
   height: 600px;
   object-fit: cover;
+  display: flexbox;
+  align-items: center;
   /* object-position: center 35%; */
   /* transform: scale(1.25) translateX(-5px); */
 }
@@ -175,7 +177,7 @@ a.secondary {
 }
 
 .interest {
-  text-align: left; 
+  text-align: left;
 }
 
 
@@ -203,6 +205,11 @@ a.secondary {
   justify-content: center;
   display: flex;
 }
+.center_text {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
 
 .galleryboxcontainer {
   background-color: var(--gray);
@@ -223,7 +230,7 @@ a.secondary {
   border-radius: 50px;
   width: 400px;
   height: 450px;
-  
+
 }
 
 .fotogallery {
@@ -251,5 +258,57 @@ a.secondary {
 
 .experiences {
   list-style-type: none;
-  
+  display:flex;
+  flex-direction: column;
+}
+
+.timeline {
+  border-left: 4px solid #e2e8f0;
+  margin: auto;
+}
+
+.item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+
+.year {
+
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--button-secondary-hover);
+}
+
+.role {
+  margin: 4px 0 0 0;
+  padding-left: 16px;
+  color: var(--button-secondary-border);
+  font-size: 18px;
+}
+
+.timelinecontainer {
+    display:flex;
+    margin-bottom: 5em;
+    margin-top: 30px;
+}
+
+.aboutme {
+    text-align: justify;
+    line-height: 1.25em;
+    margin: 20px 0 20px 0;
 }
